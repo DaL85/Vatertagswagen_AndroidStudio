@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.vatertagswagen.MainActivity"
+
+    android:background="@color/default_screen_bg"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar_Voltage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:max="24"
+        />
+
+    <TextView
+        android:id="@+id/voltage"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progressBar_Voltage"
+        android:gravity="center"
+        android:text="@string/textviewSpannungsanzeige"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:background="@color/default_screen_bg" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/voltage"
+        android:gravity="center"
+        android:text="@string/textviewCurrent"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:background="@color/default_screen_bg" />
+
+    <Button
+        android:id="@+id/button_Bremse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_bremse"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/button_throttle_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/refresh_match_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/button_throttle_active"
+        android:textSize="25sp"
+        android:textColor="#fff" />
+
+
+    <LinearLayout
+        android:id="@+id/refresh_match_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/background_view_rounded_single"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:shrinkColumns="0"
+            >
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Throttle Control"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tv_throttle_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="right"
+                    android:text="@string/throttle_value"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar_Motor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:max="255"
+            android:minHeight="50dp"
+            android:progressDrawable="@drawable/progress_horizontal"
+            android:thumb="@drawable/btn_square_overlay_normal"
+            android:thumbOffset="4px" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="12" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="20"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="40"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="60"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="80"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="100"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

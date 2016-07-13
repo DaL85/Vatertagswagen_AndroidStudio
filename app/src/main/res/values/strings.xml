@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vatertagswagen</string>
+    <string name="action_settings">Settings</string>
+    <string name="textviewSpannungsanzeige">0.00V</string>
+    <string name="textviewCurrent">0A</string>
+    <string name="menue_beenden">Beenden</string>
+    <string name="menue_startPage">Startpage</string>
+    <string name="menue_bluetooth_setup">Bluetooth Settings</string>
+    <string name="menue_info">Info</string>
+    <string name="button_bremse">Bremse</string>
+    <string name="about_msg">Bollerwagen - An Android app for the ultimativ Bollerwagen \n\n\u00A9 2014 created by the Bollerwagen-Team \n\n view the source code at \nhttps://github.com/dave26/bollerwagen</string>
+    <string name="about_changelog">Release Notes \n v1.1\n-Steuerung des Antriebes über SeekBar möglich\n- Einbingen eines zusätzlichen Buttons zur &quot;Kontrollübernahme&quot; des Elektromotors\n\nv1.2\n-Verändertes Layout\n\nv1.3\-optimierte SeekBar</string>
+    <string name="button_throttle_active">Throttle aktivieren</string>
+    <string name="throttle_value">0%</string>
+
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="devicename">defaultdevice</string>
+    <string name="textview_manuell">Bluetoothstatus: </string>
+    <string name="textview_automatik">Bluetoothstatus: </string>
+    <string name="Text">Status: -</string>
+    <string name="on">Turn On</string>
+    <string name="off">Turn Off</string>
+    <string name="List">List paired Devices</string>
+    <string name="Find">Search new Devices</string>
+</resources>

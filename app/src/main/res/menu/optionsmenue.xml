@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menue_bluetooth_setup"
+        android:title = "@string/menue_bluetooth_setup"
+        />
+    <item android:id="@+id/menue_info"
+        android:title = "@string/menue_info"
+        />
+    <item android:id="@+id/menue_beenden"
+        android:title = "@string/menue_beenden"
+        />
+</menu>
